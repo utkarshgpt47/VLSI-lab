@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 01/18/2019 11:57:22 AM
+// Design Name: 
+// Module Name: exp_1
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module exp_2(
+    input a,b,
+    output sum,carry
+    );
+    wire w1;
+    xor x1(sum,a,b);
+    not x2(w1,a);
+    and x3(carry,w1,b);
+endmodule

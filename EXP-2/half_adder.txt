@@ -1,0 +1,29 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 01/18/2019 11:43:24 AM
+// Design Name: 
+// Module Name: half_adder
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module half_adder(
+    input a,b,
+    output sum,adder_out
+    );
+    xor x1(sum,a,b);
+    and y1(adder_out,a,b);
+endmodule
